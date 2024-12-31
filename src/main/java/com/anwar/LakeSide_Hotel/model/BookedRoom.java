@@ -10,8 +10,8 @@ import java.time.LocalDate;
 @Entity
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 
 public class BookedRoom {
 
