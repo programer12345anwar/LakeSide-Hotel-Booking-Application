@@ -13,7 +13,7 @@ export async function AddRoom(photo,roomType,roomPrice){
     const response=await api.post('/rooms/add/new-room',formData);
 
     if(response.status===201){
-        return true;
+        return true;//201 means created
     }else{
         return false;
     }
