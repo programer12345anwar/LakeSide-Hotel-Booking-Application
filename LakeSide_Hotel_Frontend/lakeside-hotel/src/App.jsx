@@ -1,11 +1,13 @@
  
 import './App.css'
-import { AddRoom } from './components/utils/ApiFunctions'
+import Navbar from './components/layout/Navbar.jsx'
+import AddRoom from './components/room/AddRoom.jsx'
 
 function App() {
    
   return (
      <>
+      <Navbar/>
       <AddRoom/>
      </>
   )

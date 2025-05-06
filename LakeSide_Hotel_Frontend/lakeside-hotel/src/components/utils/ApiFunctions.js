@@ -5,14 +5,14 @@ export const api=axios.create({
 });
 
 // This function adds a new room to the database
-export async function AddRoom(photo,roomType,roomPrice){
+export async function addRoom(photo,roomType,roomPrice){
     const formData=new FormData();
     formData.append('photo',photo);
     formData.append('roomType',roomType);
     formData.append('roomPrice',roomPrice);
     const response=await api.post('/rooms/add/new-room',formData);
 
-    if(response.status===201){
+    if(response.status===200){
         return true;//201 means created
     }else{
         return false;
